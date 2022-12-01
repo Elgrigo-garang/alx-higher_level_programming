@@ -2,7 +2,7 @@
 /**
 *check_cycle - checks is a linked list contains a cycle
 *@list: linked list to check
-*Rturn:1 if the list has a cycle,0 if not
+*Return:1 if the list has a cycle,0 if not
 */
 int check_cycle(listint_t *list)
 {
