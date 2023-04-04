@@ -33,7 +33,6 @@ def board_deepcopy(board):
     if isinstance(board, list):
         return list(map(board_deepcopy, board))
     return (board)
-    return (board)
 
 
 def get_solution(board):
