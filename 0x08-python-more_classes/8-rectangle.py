@@ -33,8 +33,6 @@ class Rectangle:
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if value < 0
-        raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
@@ -68,8 +66,8 @@ class Rectangle:
 
         Args:
             rect_1 (Rectangle): The first Rectangle.
-            rect_2 (Rectangle): The second Rectangle.:
-                    Raises:
+            rect_2 (Rectangle): The second Rectangle.
+        Raises:
             TypeError: If either of rect_1 or rect_2 is not a Rectangle.
         """
         if not isinstance(rect_1, Rectangle):
