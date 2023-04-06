@@ -34,9 +34,8 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
-            raise ValueError("width must be >= 0")
-                    raise ValueError("width must be >= 0")
-        self.__width = value
+            raise ValueError("width must be >= 0"
+                    self.__width = value
 
     @property
     def height(self):
@@ -72,7 +71,7 @@ class Rectangle:
             TypeError: If either of rect_1 or rect_2 is not a Rectangle.
         """
         if not isinstance(rect_1, Rectangle):
-            raise TypeError("rect_1 must be an instance of Rectangle")
+        raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1.area() >= rect_2.area():
@@ -100,7 +99,7 @@ class Rectangle:
         for i in range(self.__height):
             [rect.append(str(self.print_symbol)) for j in range(self.__width)]
             if i != self.__height - 1:
-                                rect.append("\n")
+                rect.append("\n")
         return ("".join(rect))
 
     def __repr__(self):
