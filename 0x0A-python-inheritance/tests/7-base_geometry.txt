@@ -104,7 +104,6 @@ Passing list to method
     Traceback (most recent call last):
               ...
     TypeError: age must be an integer
-    TypeError: age must be an integer
 
 
 Passing dict to method
