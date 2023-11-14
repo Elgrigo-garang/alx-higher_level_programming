@@ -1,13 +1,9 @@
 #!/usr/bin/node
-
-const { dict } = require('./101-data');
-
-const convertedArr = Object.entries(dict);
-
-const newObj = {};
-
-convertedArr.forEach(element => {
-  newObj[element[1]] ? newObj[element[1]].push(element[0]) : newObj[element[1]] = [element[0]];
-});
-
-console.log(newObj);
+const fs = require('fs').promises;
+const { argv } = require('process');
+fs.readFile(argv[2], 'utf8')
+  .then(data => fs.writeFile(argv[4], data, 'utf8'))
+  .catch(err => console.error(err));
+fs.readFile(argv[3], 'utf8')
+  .then(data => fs.writeFile(argv[4], data, { flag: 'a' }, 'utf8'))
+  .catch(err => console.error(err));
